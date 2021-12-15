@@ -5,10 +5,37 @@
     "_sdc_repository": {
       "type": ["string"]
     },
+    "url": {
+      "type": ["null", "string"]
+    },
     "id": {
       "type": ["null", "string"]
     },
-    "url": {
+    "node_id": {
+      "type": ["null", "string"]
+    },
+    "html_url": {
+      "type": ["null", "string"]
+    },
+    "diff_url": {
+      "type": ["null", "string"]
+    },
+    "patch_url": {
+      "type": ["null", "string"]
+    },
+    "issue_url": {
+      "type": ["null", "string"]
+    },
+    "commits_url": {
+      "type": ["null", "string"]
+    },
+    "review_comments_url": {
+      "type": ["null", "string"]
+    },
+    "comments_url": {
+      "type": ["null", "string"]
+    },
+    "statuses_url": {
       "type": ["null", "string"]
     },
     "number": {
@@ -17,8 +44,71 @@
     "state": {
       "type": ["null", "string"]
     },
+    "locked": {
+      "type": ["null", "boolean"]
+    },
     "title": {
       "type": ["null", "string"]
+    },
+    "user": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "login": {
+          "type": ["null", "string"]
+        },
+        "id": {
+          "type": ["null", "integer"]
+        },
+        "node_id": {
+          "type": ["null", "string"]
+        },
+        "avatar_url": {
+          "type": ["null", "string"]
+        },
+        "gravatar_id": {
+          "type": ["null", "string"]
+        },
+        "url": {
+          "type": ["null", "string"]
+        },
+        "html_url": {
+          "type": ["null", "string"]
+        },
+        "followers_url": {
+          "type": ["null", "string"]
+        },
+        "following_url": {
+          "type": ["null", "string"]
+        },
+        "gists_url": {
+          "type": ["null", "string"]
+        },
+        "starred_url": {
+          "type": ["null", "string"]
+        },
+        "subscriptions_url": {
+          "type": ["null", "string"]
+        },
+        "organizations_url": {
+          "type": ["null", "string"]
+        },
+        "repos_url": {
+          "type": ["null", "string"]
+        },
+        "events_url": {
+          "type": ["null", "string"]
+        },
+        "received_events_url": {
+          "type": ["null", "string"]
+        },
+        "type": {
+          "type": ["null", "string"]
+        },
+        "site_admin": {
+          "type": ["null", "boolean"]
+        }
+      }
     },
     "body": {
       "type": ["null", "string"]
@@ -52,61 +142,118 @@
         }
       }
     },
-    "user": {
-      "type": ["null", "object"],
-      "additionalProperties": false,
+    "milestone": {
+      "type": ["null", "Object"],
       "properties": {
-        "login": {
+        "url": {
+          "type": ["null", "string"]
+        },
+        "html_url": {
+          "type": ["null", "string"]
+        },
+        "labels_url": {
           "type": ["null", "string"]
         },
         "id": {
           "type": ["null", "integer"]
-        }
-      }
-    },
-    "base": {
-      "type": ["null", "object"],
-      "properties": {
-        "ref": {
+        },
+        "node_id": {
           "type": ["null", "string"]
         },
-        "label": {
+        "number": {
+          "type": ["null", "integer"]
+        },
+        "state": {
           "type": ["null", "string"]
         },
-        "repo": {
+        "title": {
+          "type": ["null", "string"]
+        },
+        "description": {
+          "type": ["null", "string"]
+        },
+        "creator": {
           "type": ["null", "object"],
           "properties": {
-            "id": {
-              "type": [ "null", "integer" ]
+            "login": {
+              "type": ["null", "string"]
             },
-            "name": {
-              "type": [ "null", "string" ]
+            "id": {
+              "type": ["null", "integer"]
+            },
+            "node_id": {
+              "type": ["null", "string"]
+            },
+            "avatar_url": {
+              "type": ["null", "string"]
+            },
+            "gravatar_id": {
+              "type": ["null", "string"]
             },
             "url": {
-              "type": [ "null", "string" ]
+              "type": ["null", "string"]
+            },
+            "html_url": {
+              "type": ["null", "string"]
+            },
+            "followers_url": {
+              "type": ["null", "string"]
+            },
+            "following_url": {
+              "type": ["null", "string"]
+            },
+            "gists_url": {
+              "type": ["null", "string"]
+            },
+            "starred_url": {
+              "type": ["null", "string"]
+            },
+            "subscriptions_url": {
+              "type": ["null", "string"]
+            },
+            "organizations_url": {
+              "type": ["null", "string"]
+            },
+            "repos_url": {
+              "type": ["null", "string"]
+            },
+            "events_url": {
+              "type": ["null", "string"]
+            },
+            "received_events_url": {
+              "type": ["null", "string"]
+            },
+            "type": {
+              "type": ["null", "string"]
+            },
+            "site_admin": {
+              "type": ["null", "boolean"]
             }
           }
         },
-        "sha": {
-          "type": ["null", "string"]
+        "open_issues": {
+          "type": ["null", "integer"]
+        },
+        "closed_issues": {
+          "type": ["null", "integer"]
+        },
+        "created_at": {
+          "type": ["null", "string"],
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": ["null", "string"],
+          "format": "date-time"
+        },
+        "closed_at": {
+          "type": ["null", "string"],
+          "format": "date-time"
+        },
+        "due_on": {
+          "type": ["null", "string"],
+          "format": "date-time"
         }
       }
-    },
-    "merged_at": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "closed_at": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "created_at": {
-      "type": ["null", "string"],
-      "format": "date-time"
-    },
-    "updated_at": {
-      "type": ["null", "string"],
-      "format": "date-time"
     }
   }
 }
