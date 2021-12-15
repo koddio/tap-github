@@ -254,6 +254,367 @@
           "format": "date-time"
         }
       }
+    },
+    "active_lock_reason": {
+      "type": ["null", "string"]
+    },
+    "created_at": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "closed_at": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "merged_at": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "merge_commit_sha": {
+      "type": ["null", "string"]
+    },
+    "assignee": {
+      "type": ["null", "object"],
+      "properties": {
+        "login": {
+          "type": ["null", "string"]
+        },
+        "id": {
+          "type": ["null", "integer"]
+        },
+        "node_id": {
+          "type": ["null", "string"]
+        },
+        "avatar_url": {
+          "type": ["null", "string"]
+        },
+        "gravatar_id": {
+          "type": ["null", "string"]
+        },
+        "url": {
+          "type": ["null", "string"]
+        },
+        "html_url": {
+          "type": ["null", "string"]
+        },
+        "followers_url": {
+          "type": ["null", "string"]
+        },
+        "following_url": {
+          "type": ["null", "string"]
+        },
+        "gists_url": {
+          "type": ["null", "string"]
+        },
+        "starred_url": {
+          "type": ["null", "string"]
+        },
+        "subscriptions_url": {
+          "type": ["null", "string"]
+        },
+        "organizations_url": {
+          "type": ["null", "string"]
+        },
+        "repos_url": {
+          "type": ["null", "string"]
+        },
+        "events_url": {
+          "type": ["null", "string"]
+        },
+        "received_events_url": {
+          "type": ["null", "string"]
+        },
+        "type": {
+          "type": ["null", "string"]
+        },
+        "site_admin": {
+          "type": ["null", "boolean"]
+        }
+      }
+    },
+    "assignees": {
+      "type": ["null", "array"],
+      "items": {
+        "type": ["null", "object"],
+        "properties": {
+          "login": {
+            "type": ["null", "string"]
+          },
+          "id": {
+            "type": ["null", "integer"]
+          },
+          "node_id": {
+            "type": ["null", "string"]
+          },
+          "avatar_url": {
+            "type": ["null", "string"]
+          },
+          "gravatar_id": {
+            "type": ["null", "string"]
+          },
+          "url": {
+            "type": ["null", "string"]
+          },
+          "html_url": {
+            "type": ["null", "string"]
+          },
+          "followers_url": {
+            "type": ["null", "string"]
+          },
+          "following_url": {
+            "type": ["null", "string"]
+          },
+          "gists_url": {
+            "type": ["null", "string"]
+          },
+          "starred_url": {
+            "type": ["null", "string"]
+          },
+          "subscriptions_url": {
+            "type": ["null", "string"]
+          },
+          "organizations_url": {
+            "type": ["null", "string"]
+          },
+          "repos_url": {
+            "type": ["null", "string"]
+          },
+          "events_url": {
+            "type": ["null", "string"]
+          },
+          "received_events_url": {
+            "type": ["null", "string"]
+          },
+          "type": {
+            "type": ["null", "string"]
+          },
+          "site_admin": {
+            "type": ["null", "boolean"]
+          }
+        }
+      }
+    },
+    "requested_reviewers": {
+      "type": ["null", "array"],
+      "items": {
+        "type": ["null", "object"],
+        "properties": {
+          "login": {
+            "type": ["null", "string"]
+          },
+          "id": {
+            "type": ["null", "integer"]
+          },
+          "node_id": {
+            "type": ["null", "string"]
+          },
+          "avatar_url": {
+            "type": ["null", "string"]
+          },
+          "gravatar_id": {
+            "type": ["null", "string"]
+          },
+          "url": {
+            "type": ["null", "string"]
+          },
+          "html_url": {
+            "type": ["null", "string"]
+          },
+          "followers_url": {
+            "type": ["null", "string"]
+          },
+          "following_url": {
+            "type": ["null", "string"]
+          },
+          "gists_url": {
+            "type": ["null", "string"]
+          },
+          "starred_url": {
+            "type": ["null", "string"]
+          },
+          "subscriptions_url": {
+            "type": ["null", "string"]
+          },
+          "organizations_url": {
+            "type": ["null", "string"]
+          },
+          "repos_url": {
+            "type": ["null", "string"]
+          },
+          "events_url": {
+            "type": ["null", "string"]
+          },
+          "received_events_url": {
+            "type": ["null", "string"]
+          },
+          "type": {
+            "type": ["null", "string"]
+          },
+          "site_admin": {
+            "type": ["null", "boolean"]
+          }
+        }
+      }
+    },
+    "requested_teams": {
+      "type": ["null", "array"],
+      "items": {
+        "type": ["null", "object"],
+        "properties": {
+          "id": {
+            "type": ["null", "integer"]
+          },
+          "node_id": {
+            "type": ["null", "string"]
+          },
+          "url": {
+            "type": ["null", "string"]
+          },
+          "html_url": {
+            "type": ["null", "string"]
+          },
+          "name": {
+            "type": ["null", "string"]
+          },
+          "slug": {
+            "type": ["null", "string"]
+          },
+          "description": {
+            "type": ["null", "string"]
+          },
+          "privacy": {
+            "type": ["null", "string"]
+          },
+          "permission": {
+            "type": ["null", "string"]
+          },
+          "members_url": {
+            "type": ["null", "string"]
+          },
+          "repositories_url": {
+            "type": ["null", "string"]
+          }
+        }
+      }
+    },
+    "head": {
+      "type": ["null", "object"],
+      "properties": {
+        "label": {
+          "type": ["null", "string"]
+        },
+        "ref": {
+          "type": ["null", "string"]
+        }
+      }
+    },
+    "base": {
+      "type": ["null", "object"],
+      "properties": {
+        "label": {
+          "type": ["null", "string"]
+        },
+        "ref": {
+          "type": ["null", "string"]
+        }
+      }
+    },
+    "_links": {
+      "type": ["null", "object"],
+      "properties": {
+        "self": {
+          "type": ["null", "object"],
+          "properties": {
+            "href": {
+              "type": ["null", "string"]
+            }
+          }
+        }
+      }
+    },
+    "author_association": {
+      "type": ["null", "string"]
+    },
+    "auto_merge": {
+      "type": ["null", "string"]
+    },
+    "draft": {
+      "type": ["null", "string"]
+    },
+    "merged": {
+      "type": ["null", "string"]
+    },
+    "mergeable": {
+      "type": ["null", "string"]
+    },
+    "rebaseable": {
+      "type": ["null", "string"]
+    },
+    "mergeable_state": {
+      "type": ["null", "string"]
+    },
+    "merged_by": {
+      "type": ["null", "object"],
+      "properties": {
+        "id": {
+          "type": ["null", "integer"]
+        },
+        "node_id": {
+          "type": ["null", "string"]
+        },
+        "url": {
+          "type": ["null", "string"]
+        },
+        "html_url": {
+          "type": ["null", "string"]
+        },
+        "name": {
+          "type": ["null", "string"]
+        },
+        "slug": {
+          "type": ["null", "string"]
+        },
+        "description": {
+          "type": ["null", "string"]
+        },
+        "privacy": {
+          "type": ["null", "string"]
+        },
+        "permission": {
+          "type": ["null", "string"]
+        },
+        "members_url": {
+          "type": ["null", "string"]
+        },
+        "repositories_url": {
+          "type": ["null", "string"]
+        }
+      }
+    },
+    "comments": {
+      "type": ["null", "integer"]
+    },
+    "review_comments": {
+      "type": ["null", "integer"]
+    },
+    "maintainer_can_modify": {
+      "type": ["null", "boolean"]
+    },
+    "commits": {
+      "type": ["null", "integer"]
+    },
+    "additions": {
+      "type": ["null", "integer"]
+    },
+    "deletions": {
+      "type": ["null", "integer"]
+    },
+    "changed_files": {
+      "type": ["null", "integer"]
     }
   }
 }
